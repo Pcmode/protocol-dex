@@ -2,6 +2,13 @@ const HDWalletProvider = require('truffle-hdwallet-provider');
 
 module.exports = {
     networks: {
+        egem: {
+            host: 'https://jsonrpc.egem.io/custom',
+            port: 8895,
+            network_id: '1987',
+            gas: 3000000,
+            gasPrice: 1000000
+        },
         development: {
             host: '127.0.0.1',
             port: 8545,
